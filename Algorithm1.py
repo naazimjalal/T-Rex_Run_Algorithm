@@ -1,27 +1,18 @@
 # Libraries below this
 import pyautogui
-import webbrowser
 from PIL import Image, ImageGrab
 import time
 import pyttsx3
 
-
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-#print(voices[0].id)
 engine.setProperty('voice',voices[0].id)
 
 def read(audio):
     engine.say(audio)
     engine.runAndWait()
-# functions below
-def creds():
-    read("This Algorithm was created by Naazim, on twenty first of september, twenty twenty")
-    time.sleep(1)
-    read("Starting")
-    time.sleep(2)
-    read("Algorithm is activating in 5, 4, 3, 2, 1")
 
+# functions below
 # this function below will hit the key i want i.e - up and down arrow key
 
 def hit(key):
@@ -43,8 +34,6 @@ def duck(data):
     return False
 
 if __name__ == "__main__":
-    # first grab an image of the window and convert to grayscale for faster results
-    '''creds()'''
     hit('up')
     read("this algorithm was created by Naazim")
     while True:
