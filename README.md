@@ -1,4 +1,5 @@
 # T-Rex_Run_Algorithm
+# Remember laptop must be on _best performance mode_ 
  to run this first you have to install the libraries
  
  to install type the following commands on your terminal:
